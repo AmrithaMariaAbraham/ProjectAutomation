@@ -68,6 +68,25 @@ public class Locators extends Base
 		//Input Forms-->get Total button
 		WebElement getTotal=driver.findElement(By.xpath("//button[@id='button-two']"));
 	}
+	public void dynamicXpath()
+	{
+		//contains()-->//tag[contains(@attribute tag,'Attribute value')]
+		//InputForm--> Show Message button
+		WebElement showMesgbttn=driver.findElement(By.xpath("//button[contains(@id,'one')]"));
+		//text()-->//tag[text()='Text Message']
+		WebElement shwMesgbtn=driver.findElement(By.xpath("//button[text()='Show Message']"));
+		//xPath Axes method-->Child [Input Form-->Messge text field
+	    WebElement mesgField=driver.findElement(By.xpath("//button[@class='navbar-toggler']//child::span[@class='navbar-toggler-icon']"));
+	    //xPath Axes method-->Parent[Input Form-->Show Message button]-->(//tag[@attribute='value']//parent::value)
+	    WebElement shwmsgBtn=driver.findElement(By.xpath("//button[@id='button-one']//parent::form"));
+	    //xPath Axes method-->following[Input Form-->Show Message button]--> //tag[@attribute='attribute value']//following::tag[@attribute='attribute value']
+	    WebElement shwmsgBttn=driver.findElement(By.xpath("//button[@id='button-one']//following::div[@id='message-one']"));
+	    //indexing [Input Form-->Show Message button]-->(//tag[@attribute='value'][indexvalue])
+	    WebElement indexing=driver.findElement(By.xpath("(//form[@method='POST'])[1]"));
+	    //Date Picker
+	    WebElement showDateButton=driver.findElement(By.xpath("//button[@id='button-one']"));
+	    
+	}
 	public static void main(String[] args) 
 	{
 		Locators obj=new Locators();
