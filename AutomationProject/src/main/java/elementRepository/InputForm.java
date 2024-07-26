@@ -1,5 +1,6 @@
 package elementRepository;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 public class InputForm extends Base 
 {
@@ -17,6 +18,9 @@ public class InputForm extends Base
 		valueA.sendKeys("10");
 		WebElement valueB=driver.findElement(By.id("value-b"));
 		valueB.sendKeys("15");
+		//Scrolling down
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("window.scrollBy(350,350)");
 		WebElement getTotalClick=driver.findElement(By.id("button-two"));
 		getTotalClick.click();
 		System.out.println(getTotalClick.getText());
