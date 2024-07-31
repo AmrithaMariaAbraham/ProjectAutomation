@@ -32,5 +32,4 @@ public class Alert extends Base
 		obj.promptBox();
 		obj.driverQuitClose();
 	}
-
 }
