@@ -12,7 +12,6 @@ public class Base
 	}
 	public void driverQuitClose()
 	{
-		//driver.close();
 		driver.quit();
 	}
 	public static void main(String[] args)
