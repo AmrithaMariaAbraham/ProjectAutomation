@@ -12,7 +12,6 @@ public class Table extends Base
 	}
 	public void getRow()
 	{
-		//driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
 		//Selecting a particular row from a table
 		//tbody-->Table Body
 		//tr-->table row
@@ -21,7 +20,6 @@ public class Table extends Base
 	}
 	public void getColoumn()
 	{
-		//driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
 		List<WebElement> getColumn=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr/td[4]"));
 		System.out.println("Single Coloumn:");
 		for(WebElement column:getColumn)
@@ -31,7 +29,6 @@ public class Table extends Base
 	}
 	public void elementSearch()
 	{
-		//driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
 		String input="Junior Technical Author";
 		List<WebElement> searchValue=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr/td[2]"));
 		System.out.println("Equal element searching:");
@@ -45,7 +42,6 @@ public class Table extends Base
 	}
 	public void selectAValue()
 	{
-		//driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
 		WebElement value1=driver.findElement(By.xpath("//table[@id='dtBasicExample']/tbody/tr[2]/td[2]"));
 		System.out.println("Particular Value:"+value1.getText());
 	}
