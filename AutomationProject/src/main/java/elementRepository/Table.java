@@ -20,7 +20,7 @@ public class Table extends Base
 	}
 	public void getColoumn()
 	{
-		List<WebElement> getColumn=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr/td[4]"));
+		List<WebElement> getColumn=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr/td[2]"));
 		System.out.println("Single Coloumn:");
 		for(WebElement column:getColumn)
 		{
