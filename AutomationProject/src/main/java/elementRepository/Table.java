@@ -32,14 +32,14 @@ public class Table extends Base
 	public void elementSearch()
 	{
 		driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
-		String input="Senior Javascript Developer";
-		List<WebElement> searchValue=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr/td[2]"));
+		String input="Junior Technical Author";
+		List<WebElement> searchElement=driver.findElements(By.xpath("//table[@id='dtBasicExample']/tbody/tr/td[2]"));
 		System.out.println("Equal element searching:");
-		for(WebElement value:searchValue)
+		for(WebElement columnvalue:searchElement)
 		{
-			if(value.getText().equals(input));
+			if(columnvalue.getText().equals(input))
 			{
-				System.out.println(value.getText());
+				System.out.println(columnvalue.getText());
 			}
 		}
 	}
