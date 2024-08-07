@@ -4,7 +4,6 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -41,7 +40,6 @@ public class FileUploadExample
 		robot.keyRelease(KeyEvent.VK_V);
 		robot.keyPress(KeyEvent.VK_ENTER);
 		robot.keyRelease(KeyEvent.VK_ENTER);
-		//Assignment-->Robot class for New Tab
 	}
 	public void newTab() throws AWTException
 	{
@@ -57,7 +55,7 @@ public class FileUploadExample
 	public static void main(String[] args) throws AWTException
 	{		
 		FileUploadExample obj=new FileUploadExample();
-		//obj.fileUpload();
+		obj.fileUpload();
 		//obj.robotClassExample();
 		obj.newTab();
 	}
