@@ -2,7 +2,7 @@ package testCasesExecute;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
-public class Annotations {
+public class BeforeMethodAfterMethod {
   @Test
   public void show() 
   {
