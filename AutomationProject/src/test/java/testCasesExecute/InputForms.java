@@ -1,5 +1,6 @@
 package testCasesExecute;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 public class InputForms extends ObsquraBaseClass
@@ -15,6 +16,8 @@ public class InputForms extends ObsquraBaseClass
 	  valueA.sendKeys("10");
 	  WebElement valueB=driver.findElement(By.id("value-b"));
 	  valueB.sendKeys("15");
+	  JavascriptExecutor js=(JavascriptExecutor) driver;
+	  js.executeScript("window.scrollBy(0,250)");
 	  WebElement getTotal=driver.findElement(By.id("button-two"));
 	  getTotal.click();
   }
