@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCasesExecute.InputForms">
+      <class name="testScript.InputFormPageTest">
         <methods>
-          <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="inputForm"/>
+          <include name="beforeMethod"/>
+          <include name="sumViewtwoValues"/>
         </methods>
-      </class> <!-- testCasesExecute.InputForms -->
+      </class> <!-- testScript.InputFormPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
