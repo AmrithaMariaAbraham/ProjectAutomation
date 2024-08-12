@@ -19,6 +19,6 @@ public class ObsquraBaseClass
 	  @AfterMethod
 	  public void afterMethod() 
 	  {
-		  driver.quit();
+		  //driver.quit();
 	  }
 }
